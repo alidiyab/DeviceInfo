@@ -1,3 +1,25 @@
+<<<<<<< HEAD
+/*
+ *
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ *
+*/
+=======
 // Platform: android
 // 2.9.1
 /*
@@ -97,12 +119,15 @@ if (typeof module === "object" && typeof require === "function") {
 
 // file: lib/cordova.js
 define("cordova", function(require, exports, module) {
+>>>>>>> db767407e9a22eee7800fe6552a1888c139e2195
 
 
 var channel = require('cordova/channel');
 var platform = require('cordova/platform');
 
 /**
+<<<<<<< HEAD
+=======
  * Listen for DOMContentLoaded and notify our channel subscribers.
  */
 document.addEventListener('DOMContentLoaded', function() {
@@ -113,6 +138,7 @@ if (document.readyState == 'complete' || document.readyState == 'interactive') {
 }
 
 /**
+>>>>>>> db767407e9a22eee7800fe6552a1888c139e2195
  * Intercept calls to addEventListener + removeEventListener and handle deviceready,
  * resume, and pause events.
  */
@@ -178,6 +204,8 @@ function createEvent(type, data) {
     return event;
 }
 
+<<<<<<< HEAD
+=======
 if(typeof window.console === "undefined") {
     window.console = {
         log:function(){}
@@ -189,6 +217,7 @@ if(typeof window.console.warn === "undefined") {
         this.log("warn: " + msg);
     };
 }
+>>>>>>> db767407e9a22eee7800fe6552a1888c139e2195
 
 var cordova = {
     define:define,
@@ -329,6 +358,10 @@ var cordova = {
     }
 };
 
+<<<<<<< HEAD
+
+module.exports = cordova;
+=======
 // Register pause, resume and deviceready channels as events on document.
 channel.onPause = cordova.addDocumentEventHandler('pause');
 channel.onResume = cordova.addDocumentEventHandler('resume');
@@ -7024,3 +7057,4 @@ require('cordova/exec')(null, null, 'PluginManager', 'startup', []);
 require('cordova/channel').onNativeReady.fire();
 
 })();
+>>>>>>> db767407e9a22eee7800fe6552a1888c139e2195
