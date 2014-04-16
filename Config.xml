@@ -35,8 +35,10 @@
     <gap:platform name="symbian.wrt" />
     <gap:platform name="blackberry" project="widgets"/>
   </gap:platforms>
-  <feature name="http://api.phonegap.com/1.0/device">
-  </feature>
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+
   <!-- Deprecated plugins element. Remove in 3.0 -->
   <plugins>
     <plugin name="WebIntent" value="com.borismus.webintent.WebIntent" />
